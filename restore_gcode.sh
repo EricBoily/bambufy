@@ -30,7 +30,6 @@ EOF
   UNRETRACT_LEN=$(grep '"unretract_length"' "$JSON_FILE" | sed -E 's/.*"unretract_length": *([0-9.]+).*/\1/')
   UNRETRACT_SPEED=$(grep '"unretract_speed"' "$JSON_FILE" | sed -E 's/.*"unretract_speed": *([0-9.]+).*/\1/')
 
-
   echo "ZEXCLUDE FILENAME=\"$(basename "$FILE_PATH")\"" >> "$TMP_PRINTER"
 
   PREFIX_TEXT=$(dd if="$FILE_PATH" bs=1 count="$FILE_POS" 2>/dev/null)
@@ -50,12 +49,15 @@ EOF
   
   echo "M140 S$BED_TARGET" >> "$TMP_PRINTER"
   echo "M109 S$EXTRUDER_TARGET" >> "$TMP_PRINTER"
-  echo "_G28" >> "$TMP_PRINTER"
-
-  if awk -v z="$Z" 'BEGIN { exit (z > 0) ? 0 : 1 }'; then
-    NEW_Z=$(awk -v z="$Z" 'BEGIN { printf "%.3f", z + 5 }')
+  echo "SET_KINEMATIC_POSITION SET_HOMED=Z" >> "$TMP_PRINTER"
+  echo "SET_KINEMATIC_POSITION Z=$Z" >> "$TMP_PRINTER"
+  if awk -v z="$Z" 'BEGIN { exit (z > 0 && z <= 218) ? 0 : 1 }'; then
+    NEW_Z=$(awk -v z="$Z" 'BEGIN { printf "%.3f", z + 2 }')
     echo "G1 Z$NEW_Z" >> "$TMP_PRINTER"
   fi
+  echo "G28.1 X" >> "$TMP_PRINTER"
+  echo "G28.1 Y" >> "$TMP_PRINTER"
+
   echo "M190 S$BED_TARGET" >> "$TMP_PRINTER"
   echo "_T_CURRENT" >> "$TMP_PRINTER"
   echo "_GOTO_TRASH" >> "$TMP_PRINTER"

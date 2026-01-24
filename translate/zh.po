@@ -1,18 +1,25 @@
 msgid ""
 msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: zh\n"
+"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.4.2\n"
 
 msgid "Backup"
 msgstr "备用"
 
 msgid ""
 "Run out filament (Head) ({ifs.extruder_port|string}), backup, loading {port} "
-"and continuing with printing..."
+"and continuing with printing"
 msgstr ""
-"喷头耗材用尽 ({ifs.extruder_port|string}) 启用备用 正在加载 {port} 并继续打"
-"印..."
+"喷头耗材用尽 ({ifs.extruder_port|string}) 启用备用 正在加载 {port} 并继续打印"
 
 msgid ""
 "Filament run out in the IFS ({port|string}), we continue printing until it "
@@ -22,8 +29,8 @@ msgstr "IFS 中耗材已用尽 ({port|string}) 将继续打印 直至挤出机�
 msgid "Insert filament detected"
 msgstr "检测到插入耗材"
 
-msgid "Auto insert: {port} ..."
-msgstr "自动插入：{port} ..."
+msgid "Auto insert: {port}"
+msgstr "自动插入：{port}"
 
 msgid "Poop {i}/20"
 msgstr "冲洗 {i}/20"
@@ -31,7 +38,7 @@ msgstr "冲洗 {i}/20"
 msgid ""
 "The filament in the IFS ({consume}) has run out. The remaining filament has "
 "been used until it was no longer possible, but now it must be expelled "
-"through the waste chute in order to load the next one requested by the print."
+"through the waste chute in order to load the next one requested by the print"
 msgstr ""
 "IFS 中的耗材 ({consume}) 已耗尽 剩余部分已尽可能使用 现在必须通过废料槽排出 "
 "以便加载打印任务所需的下一种耗材"
@@ -39,173 +46,99 @@ msgstr ""
 msgid "Checking filaments"
 msgstr "正在检查耗材"
 
-msgid "Checking the status of the filaments in the IFS ports ..."
-msgstr "正在检查 IFS 各端口耗材状态..."
+msgid "Checking the status of the filaments in the IFS ports"
+msgstr "正在检查 IFS 各端口耗材状态"
 
 msgid ""
-"One of the filaments was just activating the sensor, retract 45mm all of "
-"them ..."
-msgstr "某根耗材刚刚触发传感器 正在将全部耗材回抽 45mm..."
+"One of the filaments was just activating the sensor, retract 45mm all of them"
+msgstr "某根耗材刚刚触发传感器 正在将全部耗材回抽 45mm"
 
 msgid ""
 "One of the filaments is gripped by the extruder so we extrude {flush_length|"
-"string}mm to determine which one it is ..."
+"string}mm to determine which one it is"
 msgstr ""
-"某根耗材被挤出机夹住 正在挤出 {flush_length|string}mm 以识别具体是哪一根..."
+"某根耗材被挤出机夹住 正在挤出 {flush_length|string}mm 以识别具体是哪一根"
 
-msgid "action:prompt_begin Filament type in Port {port}"
-msgstr "action:prompt_begin 端口 {port} 的耗材类型"
+msgid "Select for P{port}"
+msgstr "为 P{port} 选择"
 
-msgid "action:prompt_footer_button Close|_IFS_COLORS|primary"
-msgstr "action:prompt_footer_button 关闭|_IFS_COLORS|primary"
+msgid "Close"
+msgstr "关闭"
 
-msgid "action:prompt_begin Color to Port"
-msgstr "action:prompt_begin 颜色 → 端口"
+msgid "Color to Port"
+msgstr "颜色 → 端口"
 
-msgid "action:prompt_button LEVELING:ON|_IFS_COLORS_KAMP KAMP=0"
-msgstr "action:prompt_button 调平：开启|_IFS_COLORS_KAMP KAMP=0"
+msgid "Ports:"
+msgstr "端口:"
 
-msgid "action:prompt_button LEVELING:OFF|_IFS_COLORS_KAMP KAMP=1"
-msgstr "action:prompt_button 调平：关闭|_IFS_COLORS_KAMP KAMP=1"
+msgid "LEVELING"
+msgstr "调平"
+
+msgid "This is a multicolor printing, IFS cannot be disabled"
+msgstr "当前为多色打印 IFS 无法禁用"
+
+msgid "BACKUP"
+msgstr "备用"
+
+msgid "The BACKUP function is only possible with IFS enabled"
+msgstr "仅当 IFS 启用时 备用功能才可用"
+
+msgid "Error"
+msgstr "错误"
+
+msgid "IFS port P{port} empty"
+msgstr "IFS 端口 P{port} 为空"
+
+msgid "Incorrect filament type"
+msgstr "耗材类型不匹配"
+
+msgid "Update 'Filament change gcode' to v{ifs.min_version} or higher"
+msgstr "请将「换料 G 代码」更新至 v{ifs.min_version} 或更高版本"
+
+msgid "Print"
+msgstr "打印"
+
+msgid "It is not possible to print until all colors have been assigned"
+msgstr "所有颜色均分配端口后方可打印"
+
+msgid "Select port for"
+msgstr "为以下项选择端口"
+
+msgid "Reinstalling bambufy"
+msgstr "正在重新安装 Bambufy"
+
+msgid "Warning"
+msgstr "警告"
 
 msgid ""
-"action:prompt_button IFS:ON|_IFS_COLORS_NOTIFICATION TITLE='IFS' MSG='This "
-"is a multicolor printing, IFS cannot be disabled.'"
-msgstr ""
-"action:prompt_button IFS：开启|_IFS_COLORS_NOTIFICATION TITLE='IFS' MSG='当前"
-"为多色打印 IFS 无法禁用'"
+"Bambufy does not work with the native screen, it requires Guppy Screen "
+"(DISPLAY_OFF)"
+msgstr "Bambufy 不支持原生屏幕 需使用 Guppy Screen (DISPLAY_OFF)"
 
-msgid "action:prompt_button IFS:OFF|_IFS_COLORS_IFS EXTERNAL=0"
-msgstr "action:prompt_button IFS：关闭|_IFS_COLORS_IFS EXTERNAL=0"
+msgid "Enable Guppy Screen"
+msgstr "启用 Guppy Screen"
 
-msgid "action:prompt_button IFS:ON|_IFS_COLORS_IFS EXTERNAL=1"
-msgstr "action:prompt_button IFS：开启|_IFS_COLORS_IFS EXTERNAL=1"
+msgid "Disable Bambufy"
+msgstr "禁用 Bambufy"
 
-msgid ""
-"action:prompt_button BACKUP:OFF|_IFS_COLORS_NOTIFICATION TITLE='Backup' "
-"MSG='This is a multicolor printing, BACKUP cannot be enabled.'"
-msgstr ""
-"action:prompt_button 备用：关闭|_IFS_COLORS_NOTIFICATION TITLE='备用' MSG='当"
-"前为多色打印 备用功能无法启用'"
+msgid "Bed leveling"
+msgstr "床面调平"
 
 msgid ""
-"action:prompt_button BACKUP:OFF|_IFS_COLORS_NOTIFICATION TITLE='Backup' "
-"MSG='The BACKUP function is only possible with IFS enabled.'"
-msgstr ""
-"action:prompt_button 备用：关闭|_IFS_COLORS_NOTIFICATION TITLE='备用' MSG='仅"
-"当 IFS 启用时 备用功能才可用'"
+"The current bed mesh (auto) is no longer valid. Press BED_CALIBRATE to "
+"continue"
+msgstr "当前床面网格（自动）已失效或不存在。请按 BED_CALIBRATE 继续"
 
-msgid "action:prompt_button BACKUP:ON|_IFS_COLORS_BACKUP BACKUP=0"
-msgstr "action:prompt_button 备用：开启|_IFS_COLORS_BACKUP BACKUP=0"
-
-msgid "action:prompt_button BACKUP:OFF|_IFS_COLORS_BACKUP BACKUP=1"
-msgstr "action:prompt_button 备用：关闭|_IFS_COLORS_BACKUP BACKUP=1"
-
-msgid ""
-"action:prompt_button P{port}:--|_IFS_COLORS_NOTIFICATION TITLE='Error' "
-"MSG='IFS port P{port} empty.'"
-msgstr ""
-"action:prompt_button P{port}:--|_IFS_COLORS_NOTIFICATION TITLE='错误' "
-"MSG='IFS 端口 P{port} 为空'"
-
-msgid ""
-"action:prompt_button P{port}|_IFS_COLORS_NOTIFICATION TITLE='Error' "
-"MSG='Incorrect filament type.'"
-msgstr ""
-"action:prompt_button P{port}|_IFS_COLORS_NOTIFICATION TITLE='错误' MSG='耗材"
-"类型不匹配'"
-
-msgid ""
-"action:prompt_button P{port}|_IFS_COLORS_NOTIFICATION TITLE='Error' MSG='IFS "
-"port P{port} empty.'"
-msgstr ""
-"action:prompt_button P{port}|_IFS_COLORS_NOTIFICATION TITLE='错误' MSG='IFS "
-"端口 P{port} 为空'"
-
-msgid ""
-"action:prompt_text Update 'Filament change gcode' to v{ifs.min_version} or "
-"higher"
-msgstr ""
-"action:prompt_text 请将「换料 G 代码」更新至 v{ifs.min_version} 或更高版本"
-
-#, fuzzy
-msgid ""
-"Update 'Filament change gcode' to v{ifs.min_version} or higher https://"
-"github.com/function3d/bambufy/blob/master/MACHINE_GCODE.md"
-msgstr ""
-"请将「换料 G 代码」更新至 v{ifs.min_version} 或更高版本 https://github.com/"
-"function3d/bambufy/blob/master/MACHINE_GCODE.md  "
-
-msgid "action:prompt_footer_button Cancel|_IFS_COLORS_CANCEL"
-msgstr "action:prompt_footer_button 取消|_IFS_COLORS_CANCEL"
-
-msgid "action:prompt_footer_button Print|_IFS_COLORS_PRINT|primary"
-msgstr "action:prompt_footer_button 打印|_IFS_COLORS_PRINT|primary"
-
-#, fuzzy
-msgid ""
-"action:prompt_footer_button Print|_IFS_COLORS_NOTIFICATION TITLE='Error' "
-"MSG='Update Filament change gcode to v{ifs.min_version} or higher https://"
-"github.com/function3d/bambufy/blob/master/MACHINE_GCODE.md'|error"
-msgstr ""
-"action:prompt_footer_button 打印|_IFS_COLORS_NOTIFICATION TITLE='错误' "
-"MSG='请将换料 G 代码更新至 v{ifs.min_version} 或更高版本 https://github.com/"
-"function3d/bambufy/blob/master/MACHINE_GCODE.md  '|error"
-
-msgid ""
-"action:prompt_footer_button Print|_IFS_COLORS_NOTIFICATION TITLE='Error' "
-"MSG='It is not possible to print until all colors have been assigned.'|error"
-msgstr ""
-"action:prompt_footer_button 打印|_IFS_COLORS_NOTIFICATION TITLE='错误' "
-"MSG='所有颜色均分配端口后方可打印'|error"
-
-msgid ""
-"action:prompt_button Select for C{tool|int + 1}:{types[tool|int]}|||"
-"{colors[tool|int]}"
-msgstr ""
-"action:prompt_button 分配给 C{tool|int + 1}：{types[tool|int]}|||"
-"{colors[tool|int]}"
-
-msgid ""
-"action:prompt_button P{port}:{ifs_types[port-1]}|_IFS_COLORS_NOTIFICATION "
-"TITLE='Error' MSG='Incorrect filament type.'"
-msgstr ""
-"action:prompt_button P{port}:{ifs_types[port-1]}|_IFS_COLORS_NOTIFICATION "
-"TITLE='错误' MSG='耗材类型不匹配'"
-
-msgid "Reinstalling bambufy..."
-msgstr "正在重新安装 Bambufy…"
-
-msgid "action:prompt_begin Warning"
-msgstr "action:prompt_begin 警告"
-
-msgid ""
-"action:prompt_text Bambufy does not work with the native screen, it requires "
-"Guppy Screen (DISPLAY_OFF)"
-msgstr ""
-"action:prompt_text Bambufy 不支持原生屏幕 需使用 Guppy Screen (DISPLAY_OFF)"
-
-msgid "action:prompt_footer_button Enable Guppy Screen|_DISPLAY_OFF|info"
-msgstr "action:prompt_footer_button 启用 Guppy Screen|_DISPLAY_OFF|info"
-
-msgid ""
-"action:prompt_footer_button Disable Bambufy|DISABLE_PLUGIN name=bambufy|info"
-msgstr ""
-"action:prompt_footer_button 禁用 Bambufy|DISABLE_PLUGIN name=bambufy|info"
-
-msgid "Loading filament {port}"
-msgstr "正在加载耗材 {port}"
+msgid "Loading filament"
+msgstr "正在加载耗材"
 
 msgid "Cutting the filament"
 msgstr "正在切割耗材"
 
-msgid "Cut X={x_cut} Y={y_cut}"
-msgstr "切割 X={x_cut} Y={y_cut}"
+msgid "Unloading filament"
+msgstr "正在卸载耗材"
 
-msgid "Unloading filament {extruder_port}"
-msgstr "正在卸载耗材 {extruder_port}"
-
-msgid "Timeout ignored because printer state == paused."
+msgid "Timeout ignored because printer state is paused"
 msgstr "因打印机处于暂停状态 忽略超时"
 
 msgid "Pause during printing"
@@ -217,38 +150,36 @@ msgstr "加载中暂停"
 msgid "Pause"
 msgstr "暂停"
 
-msgid "Jam detected loading filament ({ifs.extruder_port|string}), pausing..."
-msgstr "加载耗材时检测到堵料 ({ifs.extruder_port|string}) 正在暂停..."
+msgid "Jam detected loading filament ({ifs.extruder_port|string}), pausing"
+msgstr "加载耗材时检测到堵料 ({ifs.extruder_port|string}) 正在暂停"
 
-msgid "Jam detected (Motion) ({ifs.extruder_port|string}), pausing..."
-msgstr "运动中检测到堵料 ({ifs.extruder_port|string}) 正在暂停..."
+msgid "Jam detected (Motion) ({ifs.extruder_port|string}), pausing"
+msgstr "运动中检测到堵料 ({ifs.extruder_port|string}) 正在暂停"
 
 msgid ""
 "Run out filament (Head) ({ifs.extruder_port|string}), no backup alternative "
-"has been found, pausing..."
-msgstr "喷头耗材用尽 ({ifs.extruder_port|string}) 未找到备用方案 正在暂停..."
+"has been found, pausing"
+msgstr "喷头耗材用尽 ({ifs.extruder_port|string}) 未找到备用方案 正在暂停"
 
-msgid "Run out filament (Head) ({ifs.extruder_port|string}), pausing..."
-msgstr "喷头耗材用尽 ({ifs.extruder_port|string}) 正在暂停..."
-
-msgid ""
-"Broken filament in the IFS tube (Head) ({ifs.extruder_port|string}), "
-"pausing..."
-msgstr "IFS 管路中断料（喷头端）({ifs.extruder_port|string}) 正在暂停..."
+msgid "Run out filament (Head) ({ifs.extruder_port|string}), pausing"
+msgstr "喷头耗材用尽 ({ifs.extruder_port|string}) 正在暂停"
 
 msgid ""
-"IFS Port ({ifs.extruder_port|string}) empty, please insert filament, "
-"pausing..."
-msgstr "IFS 端口 ({ifs.extruder_port|string}) 为空 请插入耗材 正在暂停..."
+"Broken filament in the IFS tube (Head) ({ifs.extruder_port|string}), pausing"
+msgstr "IFS 管路中断料（喷头端）({ifs.extruder_port|string}) 正在暂停"
+
+msgid ""
+"IFS Port ({ifs.extruder_port|string}) empty, please insert filament, pausing"
+msgstr "IFS 端口 ({ifs.extruder_port|string}) 为空 请插入耗材 正在暂停"
+
+msgid "Restoring part cooling fan speed to"
+msgstr "正在将零件冷却风扇速度恢复至"
 
 msgid "Heating the nozzle to {extruder_temp} degrees"
 msgstr "正在将喷嘴加热至 {extruder_temp}℃"
 
-msgid "action:prompt_footer_button HIDE FUTURE MESSAGES|_INFO_DIALOG_HIDE"
-msgstr "action:prompt_footer_button 隐藏后续消息|_INFO_DIALOG_HIDE"
-
-msgid "action:prompt_footer_button CLOSE|{close_action}|primary"
-msgstr "action:prompt_footer_button 关闭|{close_action}|primary"
+msgid "HIDE FUTURE MESSAGES"
+msgstr "隐藏后续消息"
 
 msgid "The information dialogs will be displayed"
 msgstr "将显示信息对话框"
@@ -256,50 +187,47 @@ msgstr "将显示信息对话框"
 msgid "The information dialogs have been hidden"
 msgstr "信息对话框已隐藏"
 
-msgid "Start print {extruder_temp}/{bed_temp} ..."
-msgstr "开始打印 {extruder_temp}/{bed_temp} ..."
+msgid "Start print {extruder_temp}/{bed_temp}"
+msgstr "开始打印 {extruder_temp}/{bed_temp}"
 
-msgid "Poop"
-msgstr "冲洗"
+msgid "Purging"
+msgstr "正在冲洗"
 
-msgid "Pooping the previous color/material from the hotend ..."
-msgstr "正在从热端冲洗上一种颜色/材料..."
+msgid "Purging the previous color/material from the hotend"
+msgstr "正在从热端冲洗上一种颜色/材料"
+
+msgid "Homing Z"
+msgstr "Z 轴归零"
+
+msgid "Nozzle cleaning"
+msgstr "正在清洁喷嘴"
 
 msgid "Leveling"
 msgstr "调平"
 
-msgid "Nozzle cleaning ..."
-msgstr "正在清洁喷嘴..."
-
-msgid "Bed leveling (KAMP) ..."
-msgstr "正在执行床面调平（KAMP）..."
+msgid "Bed leveling (KAMP)"
+msgstr "正在执行床面调平（KAMP"
 
 msgid "Go to trash"
 msgstr "前往废料位"
 
-msgid "Trash Y={client.custom_park_y}"
-msgstr "废料位 Y={client.custom_park_y}"
-
-msgid "Cleaning the nozzle on rubber"
+msgid "Cleaning the nozzle on the rubber"
 msgstr "正在橡胶垫上清洁喷嘴"
 
-msgid "action:prompt_begin Wait"
-msgstr "action:prompt_begin 请稍候"
+msgid "Wait"
+msgstr "请稍候"
 
-msgid "action:prompt_text Checking MD5 '{filename}' ..."
-msgstr "action:prompt_text 正在校验「{filename}」的 MD5..."
+msgid "Checking MD5 '{filename}'"
+msgstr "正在校验「{filename}」的 MD5"
 
-msgid "Started MD5 check {filename}"
-msgstr "已开始校验 {filename} 的 MD5"
+msgid "MD5 check started"
+msgstr "已开始校验 MD5"
 
-msgid "action:prompt_text Processing '{filename}' ..."
-msgstr "action:prompt_text 正在处理「{filename}」..."
+msgid "Processing '{filename}'"
+msgstr "正在处理「{filename}」"
 
-msgid "action:prompt_begin Error"
-msgstr "action:prompt_begin 错误"
-
-msgid "action:prompt_text MD5 check failed. Print canceled."
-msgstr "action:prompt_text MD5 校验失败 已取消打印"
+msgid "MD5 check failed. Print canceled"
+msgstr "MD5 校验失败 已取消打印"
 
 msgid ""
 "Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s"
@@ -310,3 +238,10 @@ msgid ""
 "Unloading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s"
 msgstr ""
 "正在以 {extruder_temp}℃ {speed/60} mm/s 的速度卸载 {extrude_len}mm 耗材"
+
+msgid ""
+"Please manually clean the nozzle while it is heating up then press continue"
+msgstr "请在加热过程中手动清洁喷嘴 然后按继续"
+
+msgid "Bed screws"
+msgstr "床面螺丝"

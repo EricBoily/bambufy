@@ -18,23 +18,23 @@ msgstr "Резерв"
 
 msgid ""
 "Run out filament (Head) ({ifs.extruder_port|string}), backup, loading {port} "
-"and continuing with printing..."
+"and continuing with printing"
 msgstr ""
 "Окончание филамента (головка) ({ifs.extruder_port|string}), резерв, загрузка "
-"{port}, печать продолжается..."
+"{port}, печать продолжается"
 
 msgid ""
 "Filament run out in the IFS ({port|string}), we continue printing until it "
 "runs out in the extruder or there is a filament change"
 msgstr ""
-"Филамент закончился в IFS ({port|string}), печать продолжается до окончания "
+"Филамент закончился в IFS ({port|string}). Печать продолжается до окончания "
 "в экструдере или смены филамента"
 
 msgid "Insert filament detected"
 msgstr "Обнаружен вставляемый филамент"
 
-msgid "Auto insert: {port} ..."
-msgstr "Автоматическая вставка: {port} ..."
+msgid "Auto insert: {port}"
+msgstr "Автоматическая вставка: {port}"
 
 msgid "Poop {i}/20"
 msgstr "Продувка {i}/20"
@@ -42,186 +42,113 @@ msgstr "Продувка {i}/20"
 msgid ""
 "The filament in the IFS ({consume}) has run out. The remaining filament has "
 "been used until it was no longer possible, but now it must be expelled "
-"through the waste chute in order to load the next one requested by the print."
+"through the waste chute in order to load the next one requested by the print"
 msgstr ""
 "Филамент в IFS ({consume}) закончился. Остаток был использован до предела, "
 "но теперь его необходимо вытолкнуть через лоток для отходов, чтобы загрузить "
-"следующий, требуемый печатью."
+"следующий, требуемый печатью"
 
 msgid "Checking filaments"
 msgstr "Проверка филаментов"
 
-msgid "Checking the status of the filaments in the IFS ports ..."
-msgstr "Проверка состояния филаментов в портах IFS..."
+msgid "Checking the status of the filaments in the IFS ports"
+msgstr "Проверка состояния филаментов в портах IFS"
 
 msgid ""
-"One of the filaments was just activating the sensor, retract 45mm all of "
-"them ..."
-msgstr ""
-"Один из филаментов только что активировал датчик, откат всех на 45 мм..."
+"One of the filaments was just activating the sensor, retract 45mm all of them"
+msgstr "Один из филаментов только что активировал датчик. Откат всех на 45 мм"
 
 msgid ""
 "One of the filaments is gripped by the extruder so we extrude {flush_length|"
-"string}mm to determine which one it is ..."
+"string}mm to determine which one it is"
 msgstr ""
-"Один филамент захвачен экструдером, экструзия {flush_length|string} мм для "
-"его идентификации..."
+"Один филамент захвачен экструдером. Экструзия {flush_length|string} мм для "
+"его идентификации"
 
-msgid "action:prompt_begin Filament type in Port {port}"
-msgstr "action:prompt_begin Тип филамента в порту {port}"
+msgid "Select for P{port}"
+msgstr "Выбрать для P{port}"
 
-msgid "action:prompt_footer_button Close|_IFS_COLORS|primary"
-msgstr "action:prompt_footer_button ЗАКРЫТЬ|_IFS_COLORS"
+msgid "Close"
+msgstr "Закрыть"
 
-msgid "action:prompt_begin Color to Port"
-msgstr "action:prompt_begin Цвет → Порт"
+msgid "Color to Port"
+msgstr "Цвет → Порт"
 
-msgid "action:prompt_button LEVELING:ON|_IFS_COLORS_KAMP KAMP=0"
-msgstr "action:prompt_button ВЫРАВН.:ON|_IFS_COLORS_KAMP KAMP=0"
+msgid "Ports:"
+msgstr "Порты"
 
-msgid "action:prompt_button LEVELING:OFF|_IFS_COLORS_KAMP KAMP=1"
-msgstr "action:prompt_button ВЫРАВН.:OFF|_IFS_COLORS_KAMP KAMP=1"
+msgid "LEVELING"
+msgstr "ВЫРАВНИВАНИЕ"
+
+msgid "This is a multicolor printing, IFS cannot be disabled"
+msgstr "Это многоцветная печать. IFS нельзя отключить"
+
+msgid "BACKUP"
+msgstr "РЕЗЕРВ"
+
+msgid "The BACKUP function is only possible with IFS enabled"
+msgstr "Функция РЕЗЕРВ возможна только при включенном IFS"
+
+msgid "Error"
+msgstr "Ошибка"
+
+msgid "IFS port P{port} empty"
+msgstr "Порт IFS P{port} пуст"
+
+msgid "Incorrect filament type"
+msgstr "Неверный тип филамента"
+
+msgid "Update 'Filament change gcode' to v{ifs.min_version} or higher"
+msgstr "Обновите 'gcode смены филамента' до v{ifs.min_version} или выше"
+
+msgid "Print"
+msgstr "Печать"
+
+msgid "It is not possible to print until all colors have been assigned"
+msgstr "Печать невозможна, пока не назначены все цвета"
+
+msgid "Select port for"
+msgstr "Выбрать порт для"
+
+msgid "Reinstalling bambufy"
+msgstr "Переустановка Bambufy"
+
+msgid "Warning"
+msgstr "Предупреждение"
 
 msgid ""
-"action:prompt_button IFS:ON|_IFS_COLORS_NOTIFICATION TITLE='IFS' MSG='This "
-"is a multicolor printing, IFS cannot be disabled.'"
+"Bambufy does not work with the native screen, it requires Guppy Screen "
+"(DISPLAY_OFF)"
 msgstr ""
-"action:prompt_button IFS:ON|_IFS_COLORS_NOTIFICATION TITLE='IFS' MSG='Это "
-"многоцветная печать, IFS нельзя отключить.'"
+"Bambufy не работает с родным экраном. Требуется Guppy Screen (DISPLAY_OFF)"
 
-msgid "action:prompt_button IFS:OFF|_IFS_COLORS_IFS EXTERNAL=0"
-msgstr "action:prompt_button IFS:OFF|_IFS_COLORS_IFS EXTERNAL=0"
+msgid "Enable Guppy Screen"
+msgstr "Включить Guppy Screen"
 
-msgid "action:prompt_button IFS:ON|_IFS_COLORS_IFS EXTERNAL=1"
-msgstr "action:prompt_button IFS:ON|_IFS_COLORS_IFS EXTERNAL=1"
+msgid "Disable Bambufy"
+msgstr "Отключить Bambufy"
+
+msgid "Bed leveling"
+msgstr "Выравнивание стола"
 
 msgid ""
-"action:prompt_button BACKUP:OFF|_IFS_COLORS_NOTIFICATION TITLE='Backup' "
-"MSG='This is a multicolor printing, BACKUP cannot be enabled.'"
+"The current bed mesh (auto) is no longer valid. Press BED_CALIBRATE to "
+"continue"
 msgstr ""
-"action:prompt_button РЕЗЕРВ:OFF|_IFS_COLORS_NOTIFICATION TITLE='РЕЗЕРВ' "
-"MSG='Это многоцветная печать, резервирование невозможно включить.'"
+"Текущая сетка стола (авто) больше не действительна или отсутствует. "
+"Нажмите BED_CALIBRATE для продолжения"
 
-msgid ""
-"action:prompt_button BACKUP:OFF|_IFS_COLORS_NOTIFICATION TITLE='Backup' "
-"MSG='The BACKUP function is only possible with IFS enabled.'"
-msgstr ""
-"action:prompt_button Резерв:OFF|_IFS_COLORS_NOTIFICATION TITLE='Резерв' "
-"MSG='Функция резервирования возможна только при включенном IFS.'"
-
-msgid "action:prompt_button BACKUP:ON|_IFS_COLORS_BACKUP BACKUP=0"
-msgstr "action:prompt_button РЕЗЕРВ:ON|_IFS_COLORS_BACKUP BACKUP=0"
-
-msgid "action:prompt_button BACKUP:OFF|_IFS_COLORS_BACKUP BACKUP=1"
-msgstr "action:prompt_button РЕЗЕРВ:OFF|_IFS_COLORS_BACKUP BACKUP=1"
-
-msgid ""
-"action:prompt_button P{port}:--|_IFS_COLORS_NOTIFICATION TITLE='Error' "
-"MSG='IFS port P{port} empty.'"
-msgstr ""
-"action:prompt_button P{port}:--|_IFS_COLORS_NOTIFICATION TITLE='Ошибка' "
-"MSG='Порт IFS P{port} пуст.'"
-
-msgid ""
-"action:prompt_button P{port}|_IFS_COLORS_NOTIFICATION TITLE='Error' "
-"MSG='Incorrect filament type.'"
-msgstr ""
-"action:prompt_button P{port}|_IFS_COLORS_NOTIFICATION TITLE='Ошибка' "
-"MSG='Несовместимый тип филамента.'"
-
-msgid ""
-"action:prompt_button P{port}|_IFS_COLORS_NOTIFICATION TITLE='Error' MSG='IFS "
-"port P{port} empty.'"
-msgstr ""
-"action:prompt_button P{port}|_IFS_COLORS_NOTIFICATION TITLE='Ошибка' "
-"MSG='Порт IFS P{port} пуст.'"
-
-msgid ""
-"action:prompt_text Update 'Filament change gcode' to v{ifs.min_version} or "
-"higher"
-msgstr ""
-"action:prompt_text Обновите 'gcode смены филамента' до v{ifs.min_version} "
-"или выше"
-
-msgid ""
-"Update 'Filament change gcode' to v{ifs.min_version} or higher https://"
-"github.com/function3d/bambufy/blob/master/MACHINE_GCODE.md"
-msgstr ""
-"Обновите 'gcode смены филамента' до v{ifs.min_version} или выше: https://"
-"github.com/function3d/bambufy/blob/master/MACHINE_GCODE.md"
-
-msgid "action:prompt_footer_button Cancel|_IFS_COLORS_CANCEL"
-msgstr "action:prompt_footer_button Отмена|_IFS_COLORS_CANCEL"
-
-msgid "action:prompt_footer_button Print|_IFS_COLORS_PRINT|primary"
-msgstr "action:prompt_footer_button Печать|_IFS_COLORS_PRINT|primary"
-
-msgid ""
-"action:prompt_footer_button Print|_IFS_COLORS_NOTIFICATION TITLE='Error' "
-"MSG='Update Filament change gcode to v{ifs.min_version} or higher https://"
-"github.com/function3d/bambufy/blob/master/MACHINE_GCODE.md'|error"
-msgstr ""
-"action:prompt_footer_button Печать|_IFS_COLORS_NOTIFICATION TITLE='Ошибка' "
-"MSG='Обновите gcode смены филамента до v{ifs.min_version} или выше: https://"
-"github.com/function3d/bambufy/blob/master/MACHINE_GCODE.md'|error"
-
-msgid ""
-"action:prompt_footer_button Print|_IFS_COLORS_NOTIFICATION TITLE='Error' "
-"MSG='It is not possible to print until all colors have been assigned.'|error"
-msgstr ""
-"action:prompt_footer_button Печать|_IFS_COLORS_NOTIFICATION TITLE='Ошибка' "
-"MSG='Печать невозможна, пока всем цветам не присвоены порты.'|error"
-
-msgid ""
-"action:prompt_button Select for C{tool|int + 1}:{types[tool|int]}|||"
-"{colors[tool|int]}"
-msgstr ""
-"action:prompt_button Выбрать для C{tool|int + 1}:{types[tool|int]}|||"
-"{colors[tool|int]}"
-
-msgid ""
-"action:prompt_button P{port}:{ifs_types[port-1]}|_IFS_COLORS_NOTIFICATION "
-"TITLE='Error' MSG='Incorrect filament type.'"
-msgstr ""
-"action:prompt_button P{port}:{ifs_types[port-1]}|_IFS_COLORS_NOTIFICATION "
-"TITLE='Ошибка' MSG='Несовместимый тип филамента.'"
-
-msgid "Reinstalling bambufy..."
-msgstr "Переустановка Bambufy…"
-
-msgid "action:prompt_begin Warning"
-msgstr "action:prompt_begin Предупреждение"
-
-msgid ""
-"action:prompt_text Bambufy does not work with the native screen, it requires "
-"Guppy Screen (DISPLAY_OFF)"
-msgstr ""
-"action:prompt_text Bambufy не работает с родным экраном, требуется Guppy "
-"Screen (DISPLAY_OFF)"
-
-msgid "action:prompt_footer_button Enable Guppy Screen|_DISPLAY_OFF|info"
-msgstr "action:prompt_footer_button Включить Guppy Screen|_DISPLAY_OFF|info"
-
-msgid ""
-"action:prompt_footer_button Disable Bambufy|DISABLE_PLUGIN name=bambufy|info"
-msgstr ""
-"action:prompt_footer_button Отключить Bambufy|DISABLE_PLUGIN name=bambufy|"
-"info"
-
-msgid "Loading filament {port}"
-msgstr "Загрузка филамента {port}"
+msgid "Loading filament"
+msgstr "Загрузка филамента"
 
 msgid "Cutting the filament"
 msgstr "Резка филамента"
 
-msgid "Cut X={x_cut} Y={y_cut}"
-msgstr "Резка X={x_cut} Y={y_cut}"
+msgid "Unloading filament"
+msgstr "Выгрузка филамента"
 
-msgid "Unloading filament {extruder_port}"
-msgstr "Выгрузка филамента {extruder_port}"
-
-msgid "Timeout ignored because printer state == paused."
-msgstr "Тайм-аут проигнорирован, так как состояние принтера — «пауза»."
+msgid "Timeout ignored because printer state is paused"
+msgstr "Тайм-аут проигнорирован, так как состояние принтера — пауза"
 
 msgid "Pause during printing"
 msgstr "Пауза во время печати"
@@ -232,42 +159,39 @@ msgstr "Пауза во время загрузки"
 msgid "Pause"
 msgstr "Пауза"
 
-msgid "Jam detected loading filament ({ifs.extruder_port|string}), pausing..."
-msgstr "Засор при загрузке филамента ({ifs.extruder_port|string}), пауза..."
+msgid "Jam detected loading filament ({ifs.extruder_port|string}), pausing"
+msgstr "Засор при загрузке филамента ({ifs.extruder_port|string}). Пауза"
 
-msgid "Jam detected (Motion) ({ifs.extruder_port|string}), pausing..."
-msgstr "Засор (движение) ({ifs.extruder_port|string}), пауза..."
+msgid "Jam detected (Motion) ({ifs.extruder_port|string}), pausing"
+msgstr "Засор (движение) ({ifs.extruder_port|string}). Пауза"
 
 msgid ""
 "Run out filament (Head) ({ifs.extruder_port|string}), no backup alternative "
-"has been found, pausing..."
+"has been found, pausing"
 msgstr ""
-"Окончание филамента (головка) ({ifs.extruder_port|string}), резервная "
-"альтернатива не найдена, пауза..."
+"Окончание филамента (головка) ({ifs.extruder_port|string}). Резервная "
+"альтернатива не найдена. Пауза"
 
-msgid "Run out filament (Head) ({ifs.extruder_port|string}), pausing..."
-msgstr "Окончание филамента (головка) ({ifs.extruder_port|string}), пауза..."
-
-msgid ""
-"Broken filament in the IFS tube (Head) ({ifs.extruder_port|string}), "
-"pausing..."
-msgstr ""
-"Обрыв филамента в трубке IFS (головка) ({ifs.extruder_port|string}), пауза..."
+msgid "Run out filament (Head) ({ifs.extruder_port|string}), pausing"
+msgstr "Окончание филамента (головка) ({ifs.extruder_port|string}). Пауза"
 
 msgid ""
-"IFS Port ({ifs.extruder_port|string}) empty, please insert filament, "
-"pausing..."
+"Broken filament in the IFS tube (Head) ({ifs.extruder_port|string}), pausing"
 msgstr ""
-"Порт IFS ({ifs.extruder_port|string}) пуст, вставьте филамент, пауза..."
+"Обрыв филамента в трубке IFS (головка) ({ifs.extruder_port|string}). Пауза"
+
+msgid ""
+"IFS Port ({ifs.extruder_port|string}) empty, please insert filament, pausing"
+msgstr "Порт IFS ({ifs.extruder_port|string}) пуст. Вставьте филамент. Пауза"
+
+msgid "Restoring part cooling fan speed to"
+msgstr "Восстановление скорости вентилятора охлаждения детали до"
 
 msgid "Heating the nozzle to {extruder_temp} degrees"
 msgstr "Нагрев сопла до {extruder_temp} °C"
 
-msgid "action:prompt_footer_button HIDE FUTURE MESSAGES|_INFO_DIALOG_HIDE"
-msgstr "action:prompt_footer_button СКРЫТЬ БУДУЩИЕ СООБЩЕНИЯ|_INFO_DIALOG_HIDE"
-
-msgid "action:prompt_footer_button CLOSE|{close_action}|primary"
-msgstr "action:prompt_footer_button ЗАКРЫТЬ|{close_action}|primary"
+msgid "HIDE FUTURE MESSAGES"
+msgstr "СКРЫТЬ БУДУЩИЕ СООБЩЕНИЯ"
 
 msgid "The information dialogs will be displayed"
 msgstr "Информационные диалоги будут показаны"
@@ -275,50 +199,47 @@ msgstr "Информационные диалоги будут показаны"
 msgid "The information dialogs have been hidden"
 msgstr "Информационные диалоги скрыты"
 
-msgid "Start print {extruder_temp}/{bed_temp} ..."
-msgstr "Начать печать {extruder_temp}/{bed_temp} ..."
+msgid "Start print {extruder_temp}/{bed_temp}"
+msgstr "Начать печать {extruder_temp}/{bed_temp}"
 
-msgid "Poop"
-msgstr "Продуть"
+msgid "Purging"
+msgstr "Продувка"
 
-msgid "Pooping the previous color/material from the hotend ..."
-msgstr "Продувка предыдущего цвета/материала из хотенда..."
+msgid "Purging the previous color/material from the hotend"
+msgstr "Продувка предыдущего цвета/материала из хотенда"
+
+msgid "Homing Z"
+msgstr "Возврат по оси Z"
+
+msgid "Nozzle cleaning"
+msgstr "Очистка сопла"
 
 msgid "Leveling"
 msgstr "Выравнивание"
 
-msgid "Nozzle cleaning ..."
-msgstr "Очистка сопла..."
-
-msgid "Bed leveling (KAMP) ..."
-msgstr "Выравнивание стола (KAMP)..."
+msgid "Bed leveling (KAMP)"
+msgstr "Выравнивание стола (KAMP)"
 
 msgid "Go to trash"
 msgstr "Перейти к отходам"
 
-msgid "Trash Y={client.custom_park_y}"
-msgstr "Отходы Y={client.custom_park_y}"
-
-msgid "Cleaning the nozzle on rubber"
+msgid "Cleaning the nozzle on the rubber"
 msgstr "Очистка сопла на резине"
 
-msgid "action:prompt_begin Wait"
-msgstr "action:prompt_begin Подождите"
+msgid "Wait"
+msgstr "Подождите"
 
-msgid "action:prompt_text Checking MD5 '{filename}' ..."
-msgstr "action:prompt_text Проверка MD5 '{filename}'..."
+msgid "Checking MD5 '{filename}'"
+msgstr "Проверка MD5 '{filename}'"
 
-msgid "Started MD5 check {filename}"
-msgstr "Проверка MD5 {filename} начата"
+msgid "MD5 check started"
+msgstr "Проверка MD5 начата"
 
-msgid "action:prompt_text Processing '{filename}' ..."
-msgstr "action:prompt_text Обработка '{filename}'..."
+msgid "Processing '{filename}'"
+msgstr "Обработка '{filename}'"
 
-msgid "action:prompt_begin Error"
-msgstr "action:prompt_begin Ошибка"
-
-msgid "action:prompt_text MD5 check failed. Print canceled."
-msgstr "action:prompt_text Проверка MD5 не пройдена. Печать отменена."
+msgid "MD5 check failed. Print canceled"
+msgstr "Проверка MD5 не пройдена. Печать отменена"
 
 msgid ""
 "Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s"
@@ -331,3 +252,10 @@ msgid ""
 msgstr ""
 "Выгрузка филамента при {extruder_temp} °C на {extrude_len} мм со скоростью "
 "{speed/60} мм/с"
+
+msgid ""
+"Please manually clean the nozzle while it is heating up then press continue"
+msgstr "Во время нагрева вручную очистите сопло, затем нажмите продолжить"
+
+msgid "Bed screws"
+msgstr "Винты стола"
