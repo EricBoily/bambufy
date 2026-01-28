@@ -73,8 +73,8 @@ msgstr "닫기"
 msgid "Color to Port"
 msgstr "색상 → 포트"
 
-msgid "Ports:"
-msgstr "포트:"
+msgid "IFS Ports"
+msgstr "IFS 포트"
 
 msgid "LEVELING"
 msgstr "레벨링"
@@ -130,11 +130,11 @@ msgid "Bed leveling"
 msgstr "베드 레벨링"
 
 msgid ""
-"The current bed mesh (auto) is no longer valid. Press BED_CALIBRATE to "
-"continue"
+"The current bed mesh (auto) is no longer valid or does not exist. Press BED "
+"CALIBRATE to continue"
 msgstr ""
 "현재 베드 메시(자동)가 더 이상 유효하지 않거나 존재하지 않습니다. 계속하려면 "
-"BED_CALIBRATE를 누르세요"
+"BED CALIBRATE를 누르세요"
 
 msgid "Loading filament"
 msgstr "필라멘트 로딩 중"
@@ -235,6 +235,9 @@ msgstr "MD5 확인 시작"
 
 msgid "Processing '{filename}'"
 msgstr "처리 중 '{filename}'"
+
+msgid "This may take a while. For faster processing"
+msgstr "이 작업은 시간이 다소 걸릴 수 있습니다. 더 빠른 처리를 위해"
 
 msgid "MD5 check failed. Print canceled"
 msgstr "MD5 확인 실패 인쇄 취소됨"

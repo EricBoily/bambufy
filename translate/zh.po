@@ -68,8 +68,8 @@ msgstr "关闭"
 msgid "Color to Port"
 msgstr "颜色 → 端口"
 
-msgid "Ports:"
-msgstr "端口:"
+msgid "IFS Ports"
+msgstr "IFS 端口"
 
 msgid "LEVELING"
 msgstr "调平"
@@ -125,9 +125,9 @@ msgid "Bed leveling"
 msgstr "床面调平"
 
 msgid ""
-"The current bed mesh (auto) is no longer valid. Press BED_CALIBRATE to "
-"continue"
-msgstr "当前床面网格（自动）已失效或不存在。请按 BED_CALIBRATE 继续"
+"The current bed mesh (auto) is no longer valid or does not exist. Press BED "
+"CALIBRATE to continue"
+msgstr "当前床面网格（自动）已失效或不存在。请按 BED CALIBRATE 继续"
 
 msgid "Loading filament"
 msgstr "正在加载耗材"
@@ -225,6 +225,9 @@ msgstr "已开始校验 MD5"
 
 msgid "Processing '{filename}'"
 msgstr "正在处理「{filename}」"
+
+msgid "This may take a while. For faster processing"
+msgstr "此操作可能需要一些时间。如需更快处理，请"
 
 msgid "MD5 check failed. Print canceled"
 msgstr "MD5 校验失败 已取消打印"

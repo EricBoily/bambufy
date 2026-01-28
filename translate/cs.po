@@ -73,8 +73,8 @@ msgstr "Zavřít"
 msgid "Color to Port"
 msgstr "Barva → Port"
 
-msgid "Ports:"
-msgstr "Porty:"
+msgid "IFS Ports"
+msgstr "Porty IFS"
 
 msgid "LEVELING"
 msgstr "NIVELACE"
@@ -132,11 +132,11 @@ msgid "Bed leveling"
 msgstr "Nivelace podložky"
 
 msgid ""
-"The current bed mesh (auto) is no longer valid. Press BED_CALIBRATE to "
-"continue"
+"The current bed mesh (auto) is no longer valid or does not exist. Press BED "
+"CALIBRATE to continue"
 msgstr ""
-"Aktuální síť podložky (auto) již není platná nebo neexistuje. "
-"Stiskněte BED_CALIBRATE pro pokračování"
+"Aktuální síť podložky (auto) již není platná nebo neexistuje. Stiskněte BED "
+"CALIBRATE pro pokračování"
 
 msgid "Loading filament"
 msgstr "Načítání filamentu"
@@ -240,6 +240,9 @@ msgstr "Kontrola MD5 zahájena"
 
 msgid "Processing '{filename}'"
 msgstr "Zpracování '{filename}'"
+
+msgid "This may take a while. For faster processing"
+msgstr "Toto může chvíli trvat. Pro rychlejší zpracování"
 
 msgid "MD5 check failed. Print canceled"
 msgstr "Kontrola MD5 selhala. Tisk zrušen"

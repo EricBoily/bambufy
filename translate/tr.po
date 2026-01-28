@@ -73,8 +73,8 @@ msgstr "Kapat"
 msgid "Color to Port"
 msgstr "Renk → Port"
 
-msgid "Ports:"
-msgstr "Portlar"
+msgid "IFS Ports"
+msgstr "IFS Portlar"
 
 msgid "LEVELING"
 msgstr "HİZALAMA"
@@ -131,11 +131,11 @@ msgid "Bed leveling"
 msgstr "Yatak hizalama"
 
 msgid ""
-"The current bed mesh (auto) is no longer valid. Press BED_CALIBRATE to "
-"continue"
+"The current bed mesh (auto) is no longer valid or does not exist. Press BED "
+"CALIBRATE to continue"
 msgstr ""
-"Mevcut yatak örgüsü (oto) artık geçerli değil veya mevcut değil. Devam "
-"etmek için BED_CALIBRATE tuşuna basın"
+"Mevcut yatak örgüsü (oto) artık geçerli değil veya mevcut değil. Devam etmek "
+"için BED CALIBRATE tuşuna basın"
 
 msgid "Loading filament"
 msgstr "Filaman yükleniyor"
@@ -243,6 +243,9 @@ msgstr "MD5 denetimi başladı"
 
 msgid "Processing '{filename}'"
 msgstr "İşleniyor: '{filename}'"
+
+msgid "This may take a while. For faster processing"
+msgstr "Bu biraz zaman alabilir. Daha hızlı işleme için"
 
 msgid "MD5 check failed. Print canceled"
 msgstr "MD5 denetimi başarısız oldu. Yazdırma iptal edildi"

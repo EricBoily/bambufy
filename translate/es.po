@@ -74,8 +74,8 @@ msgstr "Cerrar"
 msgid "Color to Port"
 msgstr "Color a puerto"
 
-msgid "Ports:"
-msgstr "Puertos"
+msgid "IFS Ports"
+msgstr "Puertos IFS"
 
 msgid "LEVELING"
 msgstr "NIVELACIÓN"
@@ -134,11 +134,11 @@ msgid "Bed leveling"
 msgstr "Nivelación de cama"
 
 msgid ""
-"The current bed mesh (auto) is no longer valid. Press BED_CALIBRATE to "
-"continue"
+"The current bed mesh (auto) is no longer valid or does not exist. Press BED "
+"CALIBRATE to continue"
 msgstr ""
-"La malla de cama actual (auto) ya no es válida o no existe. Pulse "
-"BED_CALIBRATE para continuar"
+"La malla de cama actual (auto) ya no es válida o no existe. Pulse BED "
+"CALIBRATE para continuar"
 
 msgid "Loading filament"
 msgstr "Cargando filamento"
@@ -242,6 +242,9 @@ msgstr "Verificación MD5 iniciada"
 
 msgid "Processing '{filename}'"
 msgstr "Procesando '{filename}'"
+
+msgid "This may take a while. For faster processing"
+msgstr "Esto puede tardar un poco. Para un procesamiento más rápido"
 
 msgid "MD5 check failed. Print canceled"
 msgstr "Fallo en la verificación MD5. Impresión cancelada"

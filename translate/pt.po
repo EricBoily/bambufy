@@ -73,8 +73,8 @@ msgstr "Fechar"
 msgid "Color to Port"
 msgstr "Cor → Porta"
 
-msgid "Ports:"
-msgstr "Portas"
+msgid "IFS Ports"
+msgstr "Portas IFS"
 
 msgid "LEVELING"
 msgstr "NIVELAMENTO"
@@ -132,11 +132,11 @@ msgid "Bed leveling"
 msgstr "Nivelamento da mesa"
 
 msgid ""
-"The current bed mesh (auto) is no longer valid. Press BED_CALIBRATE to "
-"continue"
+"The current bed mesh (auto) is no longer valid or does not exist. Press BED "
+"CALIBRATE to continue"
 msgstr ""
-"A malha atual da mesa (auto) já não é válida ou não existe. Pressione "
-"BED_CALIBRATE para continuar"
+"A malha atual da mesa (auto) já não é válida ou não existe. Pressione BED "
+"CALIBRATE para continuar"
 
 msgid "Loading filament"
 msgstr "Carregando filamento"
@@ -242,6 +242,9 @@ msgstr "Verificação MD5 iniciada"
 
 msgid "Processing '{filename}'"
 msgstr "Processando '{filename}'"
+
+msgid "This may take a while. For faster processing"
+msgstr "Isto pode demorar um pouco. Para processamento mais rápido"
 
 msgid "MD5 check failed. Print canceled"
 msgstr "Verificação MD5 falhou. Impressão cancelada"

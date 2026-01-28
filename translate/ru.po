@@ -74,8 +74,8 @@ msgstr "Закрыть"
 msgid "Color to Port"
 msgstr "Цвет → Порт"
 
-msgid "Ports:"
-msgstr "Порты"
+msgid "IFS Ports"
+msgstr "Порты IFS"
 
 msgid "LEVELING"
 msgstr "ВЫРАВНИВАНИЕ"
@@ -132,11 +132,11 @@ msgid "Bed leveling"
 msgstr "Выравнивание стола"
 
 msgid ""
-"The current bed mesh (auto) is no longer valid. Press BED_CALIBRATE to "
-"continue"
+"The current bed mesh (auto) is no longer valid or does not exist. Press BED "
+"CALIBRATE to continue"
 msgstr ""
-"Текущая сетка стола (авто) больше не действительна или отсутствует. "
-"Нажмите BED_CALIBRATE для продолжения"
+"Текущая сетка стола (авто) больше не действительна или отсутствует. Нажмите "
+"BED CALIBRATE для продолжения"
 
 msgid "Loading filament"
 msgstr "Загрузка филамента"
@@ -237,6 +237,9 @@ msgstr "Проверка MD5 начата"
 
 msgid "Processing '{filename}'"
 msgstr "Обработка '{filename}'"
+
+msgid "This may take a while. For faster processing"
+msgstr "Это может занять некоторое время. Для более быстрой обработки"
 
 msgid "MD5 check failed. Print canceled"
 msgstr "Проверка MD5 не пройдена. Печать отменена"
