@@ -94,6 +94,17 @@ def main():
     bambu_metadata = ""
     version = None
     slicer = ""
+    filament_used_g=""
+    filament_used_mm=""
+    estimated_printing_time=""
+    total_filament_used_g=""
+    filament_type=""
+    filament_settings_id=""
+    layer_height=""
+    nozzle_diameter=""
+    nozzle_diameter=""
+    nozzle_diameter=""
+    nozzle_temperature=""
 
     file_path = sys.argv[1]
     
@@ -166,17 +177,18 @@ def main():
     feedrates = ",".join(str(round(float(v) / 4 * 3 * 60)) for v in feedrates)
     exclude = get_exclude_object_define(first_layer)
     from_slicer = any(k.startswith("SLIC3R_") for k in os.environ)
-    bambu_metadata = (f"\n{filament_used_mm}\n"
-        f"{filament_used_g}\n"
-        f"{total_filament_used_g}\n"
-        f"{estimated_printing_time}"
-        f"{filament_type}"
-        f"{filament_settings_id}"
-        f"{layer_height}"
-        f"{nozzle_diameter}"
-        f"{filament_colour}"
-        f"; first_layer_bed_temperature = {hot_plate_temp}\n"
-        f"; first_layer_temperature = {nozzle_temperature}\n")
+    if slicer == "bambu":
+        bambu_metadata = (f"\n{filament_used_mm}\n"
+            f"{filament_used_g}\n"
+            f"{total_filament_used_g}\n"
+            f"{estimated_printing_time}"
+            f"{filament_type}"
+            f"{filament_settings_id}"
+            f"{layer_height}"
+            f"{nozzle_diameter}"
+            f"{filament_colour}"
+            f"; first_layer_bed_temperature = {hot_plate_temp}\n"
+            f"; first_layer_temperature = {nozzle_temperature}\n")
 
     # _IFS_COLORS header
     ifs_colors = (
